@@ -1,0 +1,33 @@
+.hex-card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit;        /* Keep text color */
+  display: block;        /* Make the whole card clickable */
+}
+
+.hex-card {
+  border: 1px solid #b22222;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+  background: #fff5e0;
+  max-width: 400px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hex-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.hex-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #b22222;
+  font-size: 1.2rem;
+}
+
+.hex-card p {
+  margin: 0 0 0.5rem 0;
+  color: #444;
+  font-weight: 500;
+}

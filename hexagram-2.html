@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2. 坤 Kūn – The Receptive</title>
+<style>
+body { font-family: "Noto Sans", sans-serif; background: #fff8f0; color: #222; padding:2rem; }
+header { background:#b22222; padding:1rem; text-align:center; border-radius:8px; margin-bottom:1rem; }
+header h1 { color:#fff; margin:0; }
+header a { color:#fff; text-decoration:none; font-weight:bold; }
+header a:hover { text-decoration: underline; }
+
+section { max-width:800px; margin:auto; padding:2rem; background:#fff0e0; border-radius:8px; }
+h2, h3 { color:#b22222; }
+.yao { border:1px solid #b22222; border-radius:5px; padding:0.8rem; margin-bottom:0.5rem; background:#fff5e0; color:#222; }
+.luck { font-weight:bold; color:#b22222; }
+.chinese { font-style: italic; color:#444; }
+.listen-btn { margin-top:5px; padding:4px 8px; background:#b22222; color:white; border:none; border-radius:4px; cursor:pointer; }
+.listen-btn:hover { background:#8b1a1a; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>2. 坤 – Kūn (The Receptive)</h1>
+  <a href="index.html">← Back to Hexagrams</a>
+</header>
+
+<section>
+<h2>Trigrams</h2>
+<p>☷☷ – Earth above, Earth below</p>
+
+<h2>Meaning</h2>
+<p>Represents receptivity, nurturing, and yielding. Symbolizes earth and pure yin energy. Encourages patience, support, and cooperation.</p>
+
+<h2>Interpretation</h2>
+<ul>
+<li>Focus on following, supporting, and nurturing rather than leading.</li>
+<li>Practice patience and openness to guidance.</li>
+<li>Adaptability and humility are rewarded.</li>
+</ul>
+
+<h2>Six Yao (Lines) with Classical Quotes</h2>
+
+<div class="yao">
+<h3>1st Yao (初爻)</h3>
+<p class="chinese">履霜，坚冰至。</p>
+<p>English: Treading on frost. Hard ice will come. Be cautious and prepare carefully at the beginning.</p>
+<p class="luck">Luck Level: Moderate</p>
+<button class="listen-btn" onclick="speak('履霜，坚冰至。')">Listen</button>
+</div>
+
+<div class="yao">
+<h3>2nd Yao (二爻)</h3>
+<p class="chinese">直方大，不习无不利。</p>
+<p>English: Upright and square. Without error, all is beneficial. Success comes through honesty and diligence.</p>
+<p class="luck">Luck Level: Good</p>
+<button class="listen-btn" onclick="speak('直方大，不习无不利。')">Listen</button>
+</div>
+
+<div class="yao">
+<h3>3rd Yao (三爻)</h3>
+<p class="chinese">含章可贞。或从王事，无成有终。</p>
+<p>English: Containing brilliance. Persevere in integrity. Join in important affairs carefully; although progress is slow, the outcome is favorable.</p>
+<p class="luck">Luck Level: Moderate</p>
+<button class="listen-btn" onclick="speak('含章可贞。或从王事，无成有终。')">Listen</button>
+</div>
+
+<div class="yao">
+<h3>4th Yao (四爻)</h3>
+<p class="chinese">括囊；无咎无誉。</p>
+<p>English: Carrying a pouch. No blame, no praise. Stay cautious, remain humble, and avoid taking unnecessary risks.</p>
+<p class="luck">Luck Level: Moderate</p>
+<button class="listen-btn" onclick="speak('括囊；无咎无誉。')">Listen</button>
+</div>
+
+<div class="yao">
+<h3>5th Yao (五爻)</h3>
+<p class="chinese">黄裳元吉。</p>
+<p>English: Yellow garment. Great fortune. Peak of receptivity and harmony; recognition and blessings come naturally.</p>
+<p class="luck">Luck Level: Excellent</p>
+<button class="listen-btn" onclick="speak('黄裳元吉。')">Listen</button>
+</div>
+
+<div class="yao">
+<h3>6th Yao (上爻)</h3>
+<p class="chinese">龙战于野，其血玄黄。</p>
+<p>English: Dragons fight in the field; their blood is dark yellow. Completion brings challenges and caution; avoid arrogance at the top.</p>
+<p class="luck">Luck Level: Moderate</p>
+<button class="listen-btn" onclick="speak('龙战于野，其血玄黄。')">Listen</button>
+</div>
+
+</section>
+
+<script>
+// Function to speak Chinese text
+function speak(text) {
+    const msg = new SpeechSynthesisUtterance();
+    msg.text = text;
+    msg.lang = 'zh-CN'; // Chinese Mandarin
+    window.speechSynthesis.speak(msg);
+}
+</script>
+
+</body>
+</html>
