@@ -94,12 +94,19 @@ h2, h3 { color:#b22222; } /* Section and Yao headers */
 </section>
 
 <script>
-// Function to speak Chinese text
 function speak(text) {
-    const msg = new SpeechSynthesisUtterance();
-    msg.text = text;
-    msg.lang = 'zh-CN'; // Chinese Mandarin
-    window.speechSynthesis.speak(msg);
+    const synth = window.speechSynthesis;
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = 'zh-CN';
+
+    const voices = synth.getVoices();
+    const chineseVoice = voices.find(voice => voice.lang.includes('zh'));
+
+    if (chineseVoice) {
+        msg.voice = chineseVoice;
+    }
+
+    synth.speak(msg);
 }
 </script>
 
