@@ -96,19 +96,38 @@ h2, h3 { color:#b22222; } /* Section and Yao headers */
 <script>
 function speak(text) {
     const synth = window.speechSynthesis;
-    const msg = new SpeechSynthesisUtterance(text);
-    msg.lang = 'zh-CN';
 
-    const voices = synth.getVoices();
-    const chineseVoice = voices.find(voice => voice.lang.includes('zh'));
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
 
-    if (chineseVoice) {
-        msg.voice = chineseVoice;
+        // Try to find Ting-Ting specifically
+        const tingTing = voices.find(v =>
+            v.name.includes("Ting") &&
+            v.lang === "zh-CN"
+        );
+
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+
+        if (tingTing) {
+            msg.voice = tingTing;
+        }
+
+        msg.rate = 0.9;  // more natural pacing
+        msg.pitch = 1;
+
+        synth.speak(msg);
     }
 
-    synth.speak(msg);
+    // If voices not loaded yet, wait for them
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
 }
 </script>
+
 
 </body>
 </html>
