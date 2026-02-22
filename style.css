@@ -1,7 +1,68 @@
-.hex-card-link {
-  text-decoration: none; /* Remove underline */
-  color: inherit;        /* Keep text color */
-  display: block;        /* Make the whole card clickable */
+/* =========================
+   Global Styles
+========================= */
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: #fff8f0;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #b22222;
+  margin: 0.5rem 0;
+}
+
+/* =========================
+   Header
+========================= */
+header {
+  background: #b22222;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 700;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: text-decoration 0.2s ease;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Sections
+========================= */
+section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   Hex Grid & Cards
+========================= */
+.hex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .hex-card {
@@ -11,13 +72,26 @@
   margin-bottom: 1.5rem;
   background: #fff5e0;
   max-width: 400px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hex-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Hexagram and trigram card links */
+.hex-card a {
+  text-decoration: none; /* Remove underline */
+  color: inherit;        /* Keep card text color */
+  display: block;        /* Make whole card clickable */
+}
+
+.hex-card a h3,
+.hex-card a p {
+  text-decoration: none; /* Ensure child elements are not underlined */
 }
 
 .hex-card h3 {
@@ -30,4 +104,87 @@
   margin: 0 0 0.5rem 0;
   color: #444;
   font-weight: 500;
+}
+
+.hex-card-link {
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+  display: block;
+}
+
+.hex-content {
+  display: none;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* =========================
+   Hexagram Detail Page
+========================= */
+.hexagram-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff0e0;
+  border-radius: 8px;
+}
+
+.hexagram-detail ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.yao {
+  border: 1px solid #b22222;
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  background: #fff5e0;
+  color: #222;
+}
+
+.luck {
+  font-weight: bold;
+  color: #b22222;
+}
+
+.chinese {
+  font-style: italic;
+  color: #444;
+}
+
+.listen-btn {
+  margin-top: 5px;
+  padding: 4px 8px;
+  background: #b22222;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.listen-btn:hover {
+  background: #8b1a1a;
+}
+
+.back-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   Footer
+========================= */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
