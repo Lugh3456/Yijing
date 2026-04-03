@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 48: 井 Jǐng – The Well | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 48 – 井 Jǐng (The Well): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>48. 井 – Jǐng (The Well)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-47.html" class="back-link" style="margin-right:auto;">← 47. 困</a>
+    <a href="hexagram-49.html" class="back-link" style="margin-left:auto;">49. 革 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☵☴ – Water above, Wind below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the inexhaustible source of nourishment. The well serves all, never refusing anyone. Towns and rulers change, but the well remains — a symbol of the enduring, sustaining resources that underlie all of civilization. Do not let the rope run short before it reaches the water.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Develop and maintain access to the deep sources of nourishment and wisdom.</li>
+    <li>Be like the well — available to all, inexhaustible in service.</li>
+    <li>Do not leave essential work unfinished; complete what you begin.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">井泥不食，旧井无禽。</p>
+    <p>English: A well filled with mud, not fit for drinking — an old well that no animals use. Resources that have been neglected and become unusable.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('井泥不食，旧井无禽。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">井谷射鬫，瀃楚漏。</p>
+    <p>English: The well shaft shoots up small fish; the jug is cracked and leaks. Potential resources are wasted through inadequate vessels or methods.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('井谷射鬫，瀃楚漏。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">井洗不食，为我心愁，可用汲，王明，并受其福。</p>
+    <p>English: The well is cleaned but not used — it saddens my heart. But it could be drawn from; if the king were wise, he and all would receive its blessing. Good resources going unused from lack of recognition.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('井洗不食，为我心愁，可用汲，王明，并受其福。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">井甬，无咎。</p>
+    <p>English: The well is being lined with stones — no blame. Improving the structure that holds the water; maintenance and strengthening of the source.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('井甬，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">井列，寒泉食。</p>
+    <p>English: The well is clean, cold spring water for drinking. A pure, clear, cold spring — the finest quality of nourishment, freely available.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('井列，寒泉食。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">井收，勿幕，有孚，元吉。</p>
+    <p>English: The well is collected into, do not cover it — there is sincerity, great good fortune. A well that is open, accessible, and transparent — the highest good of a nourishing resource.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('井收，勿幕，有孚，元吉。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
