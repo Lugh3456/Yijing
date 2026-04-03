@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 8: 比 Bǐ – Holding Together | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 8 – 比 Bǐ (Holding Together): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>8. 比 – Bǐ (Holding Together)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-7.html" class="back-link" style="margin-right:auto;">← 7. 师</a>
+    <a href="hexagram-9.html" class="back-link" style="margin-left:auto;">9. 小畜 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☵☷ – Water above, Earth below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents unity, alliance, and the bonds that hold people together. Like water on the earth, people naturally seek to join together around a worthy center. Cooperation and loyalty bring mutual benefit and security.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Seek alliances and build genuine relationships around a worthy cause or leader.</li>
+    <li>Examine your own sincerity before asking for the loyalty of others.</li>
+    <li>Those who hesitate too long to join will be left behind.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">有孚比之，无咎；有孚盈缶，终来有它，吉。</p>
+    <p>English: Holding together with sincerity, no blame. Sincerity fills the simple vessel; in the end another good thing comes. True loyalty, even from humble origins, draws good fortune.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('有孚比之，无咎；有孚盈缶，终来有它，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">比之自内，贞吉。</p>
+    <p>English: Holding together from within. Persistence brings good fortune. Union that grows from inner conviction and genuine feeling is stable and lasting.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('比之自内，贞吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">比之匡人。</p>
+    <p>English: Holding together with the wrong people. Associating with those who lack virtue or integrity leads to misfortune. Choose companions carefully.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('比之匡人。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">外比之，贞吉。</p>
+    <p>English: Holding together with those outside. Perseverance brings good fortune. Forming alliances beyond one's immediate circle is beneficial when done with integrity.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('外比之，贞吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">显比，王用三驱，失前禽，邑人不訡，吉。</p>
+    <p>English: Manifest unity. The king hunts from three sides, letting some game escape. The townspeople need not beware. Good fortune. A generous and open-hearted leader wins loyal followers.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('显比，王用三驱，失前禽，邑人不訡，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">比之无首，凶。</p>
+    <p>English: Holding together without a leader. Misfortune. A group without central direction and vision cannot hold together and will fall apart.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('比之无首，凶。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
