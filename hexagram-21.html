@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 21: 噬嗑 Shì Kè – Biting Through | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 21 – 噬嗑 Shì Kè (Biting Through): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>21. 噌嘢 – Shì Kè (Biting Through)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-20.html" class="back-link" style="margin-right:auto;">← 20. 观</a>
+    <a href="hexagram-22.html" class="back-link" style="margin-left:auto;">22. 贲 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☲☳ – Fire above, Thunder below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the removal of obstacles through decisive action. Like biting through tough food, obstacles must be confronted directly. Justice must be administered firmly and clearly to restore proper order.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Clear away obstacles with decisive and just action.</li>
+    <li>Timely enforcement of rules and boundaries is necessary for progress.</li>
+    <li>Do not allow problems to fester; address them directly and without hesitation.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">履校灭趾，无咎。</p>
+    <p>English: Stocks on feet, toes removed — no blame. Minor punishment at the start corrects small wrongs before they grow serious.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('履校灭趾，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">噌肤灭鼻，无咎。</p>
+    <p>English: Biting through tender flesh, the nose disappears — no blame. Vigorous action against wrongdoing, even if somewhat excessive, results in no lasting fault.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('噌肤灭鼻，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">噌脸肉，遇毒，小吝，无咎。</p>
+    <p>English: Biting dried meat, encountering something poisonous — small regret but no blame. Meeting resistance or difficulties when dealing with old problems is expected.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('噌脸肉，遇毒，小吝，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">噌干胵，得金矢，利鉴贞，吉。</p>
+    <p>English: Biting through dried bone, finding a metal arrow — beneficial to persist through difficulty. Good fortune. Finding the core truth beneath hard resistance.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('噌干胵，得金矢，利鉴贞，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">噌干肉，得黄金，贞厉，无咎。</p>
+    <p>English: Biting dried meat, finding yellow gold — persistence in danger, no blame. Wisdom and moderation guide the resolution of difficult disputes.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('噌干肉，得黄金，贞厉，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">何校灭耳，凶。</p>
+    <p>English: A cangue that covers the ears — misfortune. Refusing to hear warnings or heed correction leads to serious consequences.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('何校灭耳，凶。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
