@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 55: 丰 Fēng – Abundance | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 55 – 丰 Fēng (Abundance): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>55. 丰 – Fēng (Abundance)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-54.html" class="back-link" style="margin-right:auto;">← 54. 归妹</a>
+    <a href="hexagram-56.html" class="back-link" style="margin-left:auto;">56. 旅 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☳☲ – Thunder above, Fire below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the fullness of abundance and the peak of brightness. Thunder and lightning — the fullest expression of creative power. Like the noon sun at its zenith, this is a moment of absolute fullness. Be great, do not sorrow at the fullness; for like the sun, even the greatest abundance is followed by decline.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Make the most of a time of abundance and fullness.</li>
+    <li>Even the greatest abundance is temporary — act decisively while the light is full.</li>
+    <li>Enlightened action during abundance creates lasting benefit.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">遇其配主，虽旬无咎，往有尚。</p>
+    <p>English: Meeting one's destined partner — though it is only for ten days, there is no blame. Going forward brings honor. Seizing the moment of alignment, even briefly, is fully worthwhile.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('遇其配主，虽旬无咎，往有尚。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">丰其蓠，日中见斗，往得疑疾，有孚发若，吉。</p>
+    <p>English: Abundance so great that the screen is thick — at noon you see the dipper stars. Going brings suspicion and illness; but showing sincerity and opening things up brings good fortune. Overabundance that darkens rather than illuminates; transparency restores the light.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('丰其蓠，日中见斗，往得疑疾，有孚发若，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">丰其沛，日中见滚，折其右肱，无咎。</p>
+    <p>English: Such abundance that the rain cloud is dense — at noon one sees the small stars. The right arm is broken — no blame. Even in great abundance, part of one's capacity may be lost without lasting fault.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('丰其沛，日中见滚，折其右肱，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">丰其蓠，日中见斗，遇其夷主，吉。</p>
+    <p>English: The screen is so thick that at noon you see the dipper — meeting the hidden master. Good fortune. In the midst of obscured abundance, encountering the right guide brings good fortune.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('丰其蓠，日中见斗，遇其夷主，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">来章，有庆誉，吉。</p>
+    <p>English: Brightness comes — there is praise and glory. Good fortune. The right person arrives to illuminate and inspire; recognition and celebration follow.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('来章，有庆誉，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">丰其屋，蓠其家，空其户，阂其无人，三岁不规，凶。</p>
+    <p>English: Making one's roof so abundant that it screens the house — making the doorway dark, peering inside, not a person to be seen. For three years there is no one. Misfortune. Excess turned inward becomes isolation and ultimately ruin.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('丰其屋，蓠其家，空其户，阂其无人，三岁不规，凶。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
