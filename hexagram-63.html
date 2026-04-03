@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 63: 既济 Jì Jì – After Completion | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 63 – 既济 Jì Jì (After Completion): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>63. 既济 – Jì Jì (After Completion)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-62.html" class="back-link" style="margin-right:auto;">← 62. 小过</a>
+    <a href="hexagram-64.html" class="back-link" style="margin-left:auto;">64. 未济 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☵☲ – Water above, Fire below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the completion of a great task and the beginning of decline. Water above fire — each element in its proper place, perfect order. Yet in this very perfection lies danger; completion contains the seed of disorder. Remain vigilant even in success.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Even after great success is achieved, maintain vigilance and discipline.</li>
+    <li>The greatest danger often comes at the moment of seeming completion.</li>
+    <li>Order that is achieved must be actively maintained or it will decay.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">曳其轮，濡其尾，无咎。</p>
+    <p>English: Dragging back the wheels, wetting the tail — no blame. Slowing down right at the start; the fox gets its tail wet, showing caution at the critical moment.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('曳其轮，濡其尾，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">妇丧其茐，勿逐，七日得。</p>
+    <p>English: The woman loses her carriage curtain — do not pursue; after seven days she will get it back. Do not chase after what has been lost in the moment of completion; it will return of its own accord.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('妇丧其茐，勿逐，七日得。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">高宗伐鬼方，三年克之，小人勿用。</p>
+    <p>English: Emperor Kao Tsung campaigns against the devil country — after three years he conquers it. Do not employ petty people. Major undertakings require sustained commitment and the right people.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('高宗伐鬼方，三年克之，小人勿用。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">绣有衤襴，终日戒。</p>
+    <p>English: Silk-stuffed garments and rags side by side — be cautious throughout the day. In achievement there are always contrasts and reminders of vulnerability; stay alert.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('绣有衤襴，终日戒。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">东邻杀牛，不如西邻之穡祭，实受其福。</p>
+    <p>English: The eastern neighbor slaughters an ox — this does not equal the western neighbor's simple spring offering, which truly receives the blessing. Genuine sincerity in small gestures surpasses elaborate but hollow ceremony.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('东邻杀牛，不如西邻之穡祭，实受其福。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">濡其首，厉。</p>
+    <p>English: Getting the head wet — dangerous. The very end of the completion, when the head goes under water; the final moment where overextension brings the greatest peril.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('濡其首，厉。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
