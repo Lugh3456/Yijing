@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 17: 随 Suí – Following | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 17 – 随 Suí (Following): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>17. 随 – Suí (Following)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-16.html" class="back-link" style="margin-right:auto;">← 16. 豫</a>
+    <a href="hexagram-18.html" class="back-link" style="margin-left:auto;">18. 蛊 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☱☳ – Lake above, Thunder below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the art of following and adapting. Thunder rests within the lake — energy settles into rest. To lead well, one must first know how to follow. Adapting to circumstances, being guided by what is right, and inspiring voluntary allegiance are the keys.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>True leadership is built on the ability to follow what is right and timely.</li>
+    <li>Adapt to changing circumstances with openness rather than rigidity.</li>
+    <li>The one who leads through genuine virtue draws followers naturally.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">官有渝，贞吉；出门交有功。</p>
+    <p>English: Standards of conduct change — perseverance brings good fortune. Going out through the gate to interact with others brings merit. Flexibility and engagement with the world succeed.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('官有渝，贞吉；出门交有功。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">系小子，失丈夫。</p>
+    <p>English: Tied to the small boy, losing the strong man. Clinging to the lesser option means missing the greater opportunity.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('系小子，失丈夫。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">系丈夫，失小子；随有求得；利居贞。</p>
+    <p>English: Tied to the strong man, losing the small boy. Through following, one gets what one seeks. It is beneficial to remain upright. Attaching to what is strong and principled is rewarding.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('系丈夫，失小子；随有求得；利居贞。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">随有获，贞凶；有孚在道，以明何咎。</p>
+    <p>English: In following there are gains, but persistence could lead to misfortune. Being sincere and clear on the path — how could that be blamed? Keep motives honest when taking advantage of opportunities.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('随有获，贞凶；有孚在道，以明何咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">孚于嘉，吉。</p>
+    <p>English: Sincerely devoted to excellence — good fortune. Wholehearted commitment to the best and highest brings true good fortune.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('孚于嘉，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">拘系之，乃从维之；王用亨于西山。</p>
+    <p>English: Bound and secured, then led and bound again. The king performs his offering on the western mountain. Commitment that is confirmed by ritual and communal recognition has lasting validity.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('拘系之，乃从维之；王用亨于西山。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
