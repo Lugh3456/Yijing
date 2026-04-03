@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 28: 大过 Dà Guò – Great Exceeding | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 28 – 大过 Dà Guò (Great Exceeding): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>28. 大过 – Dà Guò (Great Excess)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-27.html" class="back-link" style="margin-right:auto;">← 27. 颐</a>
+    <a href="hexagram-29.html" class="back-link" style="margin-left:auto;">29. 坎 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☱☴ – Lake above, Wind below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents a critical overload — the ridgepole of the roof is sagging. The situation is under extraordinary stress. Exceptional times require exceptional measures; ordinary solutions will not suffice. Act boldly and independently, even if it means standing alone.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>The situation is critical; bold and unconventional action is required.</li>
+    <li>Stand firm and act independently when circumstances demand it.</li>
+    <li>After the extraordinary moment passes, return to normal conduct.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">藉用白茅，无咎。</p>
+    <p>English: Using white rushes as padding beneath — no blame. Taking extra care and caution at the foundation, even if it seems excessive, prevents disaster.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('藉用白茅，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">枯杨生梯，老夫得其女妻，无不利。</p>
+    <p>English: A withered willow puts forth new shoots; an old man gets a young wife — nothing is unfavorable. Unexpected renewal, unlikely unions that nonetheless prove fruitful.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('枯杨生梯，老夫得其女妻，无不利。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">棋桔，凶。</p>
+    <p>English: The ridgepole sags — misfortune. Weakness at the center when strength is most needed leads to collapse.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('棋桔，凶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">棋隆，吉；有它，吝。</p>
+    <p>English: The ridgepole is strengthened — good fortune. But if there are other entanglements, regret. Shoring up the critical point succeeds, but new complications can still arise.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('棋隆，吉；有它，吝。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">枯杨生华，老妇得其士夫，无咎无誉。</p>
+    <p>English: A withered willow puts forth flowers; an old woman gets a young husband — no blame, no praise. A temporary flourishing that brings neither honor nor lasting consequence.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('枯杨生华，老妇得其士夫，无咎无誉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">过涉灭顶，凶，无咎。</p>
+    <p>English: Going too far in crossing — water over the head. Misfortune. But no blame. Giving everything in a lost cause may end in disaster but carries no moral fault.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('过涉灭顶，凶，无咎。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
