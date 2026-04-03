@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 4: 蒙 Méng – Youthful Folly | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 4 – 蒙 Méng (Youthful Folly): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>4. 蒙 – Méng (Youthful Folly)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-3.html" class="back-link" style="margin-right:auto;">← 3. 屯</a>
+    <a href="hexagram-5.html" class="back-link" style="margin-left:auto;">5. 需 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☶☵ – Mountain above, Water below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents inexperience, learning, and the relationship between teacher and student. The young and ignorant must seek wisdom humbly. A good teacher educates with patience but does not repeat lessons to the willfully ignorant.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Approach learning with genuine humility and openness.</li>
+    <li>The student must come to the teacher, not the other way around.</li>
+    <li>Discipline and correct guidance are essential for growth.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">发蒙，利用刑人，用说桓棏，以往吝。</p>
+    <p>English: Dispelling ignorance. It is useful to apply discipline and remove shackles. But pushing too far brings regret. Firm correction is needed but must not be excessive.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('发蒙，利用刑人，用说桓棏，以往吝。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">包蒙，吉；纳妇，吉；子克家。</p>
+    <p>English: Tolerating the ignorant with patience brings good fortune. Taking a wife brings good fortune. The son is capable of managing the household. Embrace responsibility with care.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('包蒙，吉；纳妇，吉；子克家。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">勿用取女，见金夫，不有躺，无攸利。</p>
+    <p>English: Do not take such a woman in marriage. She sees a wealthy man and abandons her integrity. Nothing is gained. Beware of those who lack genuine virtue.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('勿用取女，见金夫，不有躺，无攸利。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">困蒙，吝。</p>
+    <p>English: Bound in ignorance, there is regret. When one refuses to learn and remains isolated from wisdom, the path grows narrow.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('困蒙，吝。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">童蒙，吉。</p>
+    <p>English: Childlike openness and innocence bring good fortune. The beginner's mind, free from arrogance, is ready to receive wisdom.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('童蒙，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">击蒙，不利为寇，利御寇。</p>
+    <p>English: Striking against ignorance. It does not help to be aggressive, but defending against it is beneficial. Discipline serves to protect, not punish.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('击蒙，不利为寇，利御寇。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
