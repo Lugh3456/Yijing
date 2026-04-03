@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 13: 同人 Tóng Rén – Fellowship | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 13 – 同人 Tóng Rén (Fellowship): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>13. 同人 – Tóng Rén (Fellowship)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-12.html" class="back-link" style="margin-right:auto;">← 12. 否</a>
+    <a href="hexagram-14.html" class="back-link" style="margin-left:auto;">14. 大有 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☰☲ – Heaven above, Fire below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents community, fellowship, and the union of people under a shared purpose. True fellowship is open and impartial, not based on cliques or exclusion. When people come together in sincerity and without selfishness, great things can be accomplished.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Build alliances based on shared principles, not personal gain.</li>
+    <li>Open fellowship — not exclusive cliques — is the basis of real strength.</li>
+    <li>Temporary separation or conflict gives way to reunion and celebration.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">同人于门，无咎。</p>
+    <p>English: Fellowship at the gate — no blame. Opening yourself to connection with those who approach brings no harm. An open and welcoming attitude invites positive relationships.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('同人于门，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">同人于宗，吝。</p>
+    <p>English: Fellowship only within the clan, regret. Limiting your circle to one's own group creates exclusiveness and invites conflict with those outside.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('同人于宗，吝。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">伏戎于莒，升其高陵，三岁不兴。</p>
+    <p>English: Soldiers hidden in the thicket, ascending the high mound — for three years they cannot rise. Secret hostility and suspicion prevent progress for a long time.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('伏戎于莒，升其高陵，三岁不兴。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">乘其墓，弗克攻，吉。</p>
+    <p>English: Mounting the city wall, but unable to attack — good fortune. Realizing that the attack cannot succeed and withdrawing is wise. Restraint here leads to a better outcome.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('乘其墓，弗克攻，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">同人，先号唱而后笑，大师克相遇。</p>
+    <p>English: In fellowship, first weeping and wailing, then laughing. After great effort, the armies meet. After long separation and struggle, reunion and harmony are achieved.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('同人，先号唱而后笑，大师克相遇。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">同人于郊，无悔。</p>
+    <p>English: Fellowship in the open country — no regret. Broad and open fellowship, beyond any specific group or agenda, brings no cause for regret.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('同人于郊，无悔。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
