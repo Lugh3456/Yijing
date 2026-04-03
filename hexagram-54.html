@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 54: 归妹 Guī Mèi – The Marrying Maiden | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 54 – 归妹 Guī Mèi (The Marrying Maiden): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>54. 归妹 – Guī Mèi (The Marrying Maiden)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-53.html" class="back-link" style="margin-right:auto;">← 53. 渐</a>
+    <a href="hexagram-55.html" class="back-link" style="margin-left:auto;">55. 丰 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☳☱ – Thunder above, Lake below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents an imperfect but necessary union. Thunder above the lake — impulsive force above joyful receptivity. A secondary marriage, or a union made under less than ideal circumstances. Such relationships can still be made to work through patience and adapting to one's actual situation.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Accept your actual situation gracefully rather than demanding ideal conditions.</li>
+    <li>A secondary or subordinate position, held with dignity, is better than none.</li>
+    <li>Patience and modesty in a difficult relationship eventually brings harmony.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">归妹以娣，跛能履，征吉。</p>
+    <p>English: Marrying as a concubine — the lame can still walk. Going forward is auspicious. Even in a secondary position, making the best of it with courage and patience brings good results.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('归妹以娣，跛能履，征吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">眼能视，利幽人之贞。</p>
+    <p>English: The one-eyed can still see — beneficial for the constancy of the reclusive person. Even with limited perception, a quiet steadiness of character brings benefit.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('眼能视，利幽人之贞。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">归妹以须，反归以娣。</p>
+    <p>English: The maiden to be married must wait — she returns to marry as a concubine. Failing to achieve the primary status, she accepts the secondary role.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('归妹以须，反归以娣。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">归妹湆期，迟归有时。</p>
+    <p>English: The marrying maiden delays the time — a late return has its own proper time. Waiting for the right moment, even if it means a delayed fulfillment.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('归妹湆期，迟归有时。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">帝乙归妹，其君之襄，不如其娣之襄良；月几望，吉。</p>
+    <p>English: Emperor Yi marries off his younger sister. The prince's sleeves are not as fine as the concubine's — the moon is nearly full. Good fortune. True inner virtue is more important than outward rank or adornment.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('帝乙归妹，其君之襄，不如其娣之襄良；月几望，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">女承筐无实，士制羊无血，无攸利。</p>
+    <p>English: The woman holds a basket with nothing in it; the man slaughters the sheep and gets no blood — nothing is gained. A union that is empty of genuine substance; the forms are maintained but nothing real is exchanged.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('女承筐无实，士制羊无血，无攸利。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
