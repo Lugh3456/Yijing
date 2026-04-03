@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 19: 临 Lín – Approach | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 19 – 临 Lín (Approach): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>19. 临 – Lín (Approach)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-18.html" class="back-link" style="margin-right:auto;">← 18. 蛊</a>
+    <a href="hexagram-20.html" class="back-link" style="margin-left:auto;">20. 观 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☷☱ – Earth above, Lake below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents approach and advance. The great comes close to the small with benevolent intention. A time of increasing influence and favorable growth. However, within the growth lies the seed of future difficulty — awareness of change ahead is wise.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>This is a favorable time for advancement, influence, and reaching out to others.</li>
+    <li>Lead with genuine care and wisdom, not just authority.</li>
+    <li>Even in times of growth, remain mindful that conditions will eventually change.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">和临，贞吉。</p>
+    <p>English: Approaching with harmony — perseverance brings good fortune. A gentle and harmonious approach to others creates a solid foundation.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('和临，贞吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">和临，吉，无不利。</p>
+    <p>English: Approaching with harmony — good fortune, nothing is unfavorable. Warm, genuine engagement with others brings universal benefit.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('和临，吉，无不利。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">甘临，无攸利；既忧之，无咎。</p>
+    <p>English: Sweet-talking one's approach brings no benefit. But if one recognizes this and becomes anxious, no real harm results. False charm alone is not enough; genuine concern must follow.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('甘临，无攸利；既忧之，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">至临，无咎。</p>
+    <p>English: Approaching wholeheartedly — no blame. Going the full distance with complete commitment and engagement.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('至临，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">知临，大君之宜，吉。</p>
+    <p>English: Wise approach — this is right for the great ruler. Good fortune. Wise and knowing leadership that anticipates needs and acts with insight.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('知临，大君之宜，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">敦临，吉，无咎。</p>
+    <p>English: Sincere and devoted approach — good fortune, no blame. The most generous and wholehearted form of engagement brings lasting good.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('敦临，吉，无咎。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
