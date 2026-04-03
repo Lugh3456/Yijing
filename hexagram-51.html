@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 51: 震 Zhèn – The Arousing | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 51 – 震 Zhèn (The Arousing): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>51. 震 – Zhèn (The Arousing)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-50.html" class="back-link" style="margin-right:auto;">← 50. 鼎</a>
+    <a href="hexagram-52.html" class="back-link" style="margin-left:auto;">52. 艮 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☳☳ – Thunder above, Thunder below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the shock of thunder and the power of awakening. Thunder repeated — shocking, arousing, frightening. Yet after the terror comes relief and laughter. The thunderstroke wakes us up, clears the air, and tests our inner composure. How one responds to sudden shock reveals character.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Shocks and sudden disruptions are part of the natural order — do not be overwhelmed.</li>
+    <li>Maintain your composure and keep performing your duties through any upheaval.</li>
+    <li>The inner calm that holds through catastrophe is the highest form of courage.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">震来虧虧，后笑言哑哑，吉。</p>
+    <p>English: Thunder comes — oh so frightening! Then laughter and talk. Good fortune. First fear, then relief — the shock that awakens but does not destroy.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('震来虧虧，后笑言哑哑，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">震来厉，乿丧贝，跳于九陵；勿逐，七日得。</p>
+    <p>English: Thunder comes — danger! A hundred thousand cowrie shells lost, climbing the nine hills. Do not pursue — after seven days you will get it back. Do not try to save what is lost in the shock; it will return on its own.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('震来厉，乿丧贝，跳于九陵；勿逐，七日得。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">震苏苏，震行无眨。</p>
+    <p>English: Thunder comes — distracted and stumbling. If one acts through the shock without fault, there is no disaster. Disorientation in the shock is natural; keep moving forward.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('震苏苏，震行无眨。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">震遂泥。</p>
+    <p>English: Thunder sinks into the mud. The shock has lost its power to arouse; stagnation results.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('震遂泥。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">震往来厉，乿无丧，有事。</p>
+    <p>English: Thunder going and coming — dangerous. No great loss, but there are matters to attend to. Moving through repeated shocks without catastrophic loss, but much requires careful attention.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('震往来厉，乿无丧，有事。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">震索索，视矍矍，征凶；震不于其身，于其邻，无咎；婚婴有言。</p>
+    <p>English: Thunder brings trembling and fearful gazing around. Going forward is misfortune. But if the shock does not strike one's own person but one's neighbor — no blame. But there will be words among those seeking union. Being on the edge of but not struck by catastrophe brings no fault, but the event creates talk.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('震索索，视矍矍，征凶；震不于其身，于其邻，无咎；婚婴有言。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
