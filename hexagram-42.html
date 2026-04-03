@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 42: 益 Yì – Increase | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 42 – 益 Yì (Increase): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>42. 益 – Yì (Increase)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-41.html" class="back-link" style="margin-right:auto;">← 41. 损</a>
+    <a href="hexagram-43.html" class="back-link" style="margin-left:auto;">43. 夬 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☴☳ – Wind above, Thunder below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents increase, growth, and abundance flowing from above to below. The upper decreases to benefit the lower — a natural, generous outpouring. This is a propitious time for great undertakings; take action while the favorable conditions last.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>This is an auspicious time for bold action and significant undertakings.</li>
+    <li>Share benefits generously downward to those who need them.</li>
+    <li>Act while the favorable conditions are present; the moment will pass.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">利用为大作，元吉，无咎。</p>
+    <p>English: Beneficial to undertake great works — primary good fortune, no blame. A time of genuine increase that supports large and ambitious undertakings.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('利用为大作，元吉，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">或益之，十朋之龟弗克违，永贞吉，王用享于帝，吉。</p>
+    <p>English: Someone increases it; ten pairs of tortoise shells cannot oppose it. Lasting perseverance brings good fortune. The king makes offering to God — good fortune. Benefiting all below is in harmony with heaven's own intention.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('或益之，十朋之龟弗克违，永贞吉，王用享于帝，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">益之用凶事，无咎，有孚中行，告公用圭。</p>
+    <p>English: Increased through calamitous events — no blame. Sincerity through the middle way, reporting to the duke with a jade tablet. Even from crisis comes growth when handled with integrity.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('益之用凶事，无咎，有孚中行，告公用圭。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">中行，告公从，利用为依迁国。</p>
+    <p>English: Walking the middle way, reporting to the duke — following. Beneficial to use this for a capital transfer. The moment is right for major reorganization and expansion.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('中行，告公从，利用为依迁国。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">有孚惠心，勿问元吉；有孚惠我德。</p>
+    <p>English: Sincerely benevolent in heart — great good fortune without question. Sincerely bringing benefit to my virtue. The highest form of increase — enriching inner virtue and sharing it generously.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('有孚惠心，勿问元吉；有孚惠我德。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">莫益之，或击之，立心勿恒，凶。</p>
+    <p>English: No one benefits it; someone may strike it. One's heart cannot maintain its course — misfortune. A heart that is not genuinely committed to benefiting others, and whose constancy is uncertain, invites attack and disaster.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('莫益之，或击之，立心勿恒，凶。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
