@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 46: 升 Shēng – Pushing Upward | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 46 – 升 Shēng (Pushing Upward): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>46. 升 – Shēng (Pushing Upward)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-45.html" class="back-link" style="margin-right:auto;">← 45. 萃</a>
+    <a href="hexagram-47.html" class="back-link" style="margin-left:auto;">47. 困 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☷☴ – Earth above, Wind below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents steady upward growth from below. The tree grows from the earth, pushing upward with patient, organic power. This is a time for confident advance. The growth is gradual but unstoppable when aligned with natural order and virtuous effort.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Advance steadily and confidently — conditions support your growth.</li>
+    <li>Work through proper channels and seek the guidance of those in authority.</li>
+    <li>Consistent, patient effort accumulates into significant achievement.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">允升，大吉。</p>
+    <p>English: Pushing upward with consent and trust — great good fortune. When one's upward progress is welcomed and supported, success is certain.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('允升，大吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">孚乃利用穡，无咎。</p>
+    <p>English: Sincerity makes even simple offerings beneficial — no blame. With genuine inner sincerity, even the most modest offering has genuine efficacy.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('孚乃利用穡，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">升虚邑。</p>
+    <p>English: Pushing upward into an empty city. Advancing without resistance into a place vacated by others — the way is wide open.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('升虚邑。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">王用亨于岐山，吉，无咎。</p>
+    <p>English: The king makes offering at Mount Qi — good fortune, no blame. Performing sacred duties in a significant and historic place; connecting with deeper roots.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('王用亨于岐山，吉，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">贞吉，升阶。</p>
+    <p>English: Perseverance brings good fortune — ascending the stairs. Step by step, steady advancement, each level attained through proper effort.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('贞吉，升阶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">冥升，利于不息之贞。</p>
+    <p>English: Pushing upward in darkness — beneficial to be tireless in persistence. Even advancing without clear vision, the practice of unwearying constancy brings benefit.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('冥升，利于不息之贞。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
