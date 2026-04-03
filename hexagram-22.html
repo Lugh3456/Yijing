@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 22: 贲 Bì – Grace | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 22 – 贲 Bì (Grace): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>22. 贲 – Bì (Grace)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-21.html" class="back-link" style="margin-right:auto;">← 21. 噬嗑</a>
+    <a href="hexagram-23.html" class="back-link" style="margin-left:auto;">23. 剥 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☶☲ – Mountain above, Fire below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents beauty, adornment, and the importance of form alongside substance. Fire at the foot of the mountain illuminates with clarity and grace. Outward beauty and ceremony have their place but must never replace inner truth.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Attend to appearances and presentation, but never at the expense of substance.</li>
+    <li>Grace and beauty in conduct reflect inner virtue.</li>
+    <li>Pure simplicity — white grace — is the highest form of adornment.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">贲其趾，舍车而徒。</p>
+    <p>English: Adorning the toes, leaving the carriage and going on foot. Choosing the humble path with elegance rather than the grand conveyance.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('贲其趾，舍车而徒。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">贲其须。</p>
+    <p>English: Adorning the beard. Following along and enhancing what is already there, adding refinement to existing virtue.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('贲其须。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">贲如濡如，永贞吉。</p>
+    <p>English: Adorned and lustrous — perseverance brings good fortune. Beauty that is both radiant and enduring, sustained through righteous constancy.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('贲如濡如，永贞吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">贲如皇如，白马翰如，匡寇婚婴。</p>
+    <p>English: Adorned yet plain, white horse swift as wings — the one approaching is not a robber but a suitor. Apparent conflict reveals itself as a genuine approach.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('贲如皇如，白马翰如，匡寇婚婴。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">贲于丘园，束帛戕戕，吝，终吉。</p>
+    <p>English: Adorning the hills and gardens, with silk as the small gift — some regret but ultimately good fortune. Simple and modest offerings from an honest heart are ultimately more valued.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('贲于丘园，束帛戕戕，吝，终吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">白贲，无咎。</p>
+    <p>English: White grace — no blame. The highest grace is pure simplicity, unadorned and true. Pure white needs no further embellishment.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('白贲，无咎。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
