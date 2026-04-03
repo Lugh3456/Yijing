@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 59: 涣 Huàn – Dispersion | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 59 – 涣 Huàn (Dispersion): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>59. 浣 – Huàn (Dispersion)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-58.html" class="back-link" style="margin-right:auto;">← 58. 兑</a>
+    <a href="hexagram-60.html" class="back-link" style="margin-left:auto;">60. 节 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☴☵ – Wind above, Water below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the dissolution of rigidity, blockages, and selfish divisions. Wind on the water — dispersing what has frozen and hardened. When egotism and separation are dissolved, genuine unity becomes possible. Spiritual practice and communal ritual are the means of dissolving what has hardened.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Dissolve rigidity, selfishness, and divisions that block natural flow.</li>
+    <li>Spiritual practice and shared ceremony unite what has been separated.</li>
+    <li>Act magnanimously and sacrifice personal interests for the greater good.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">用拯马壮，吉。</p>
+    <p>English: Rescuing with a strong horse — good fortune. Quick, decisive action at the first sign of dispersal prevents the dissolution from becoming damaging.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('用拯马壮，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">浣奔其机，悔亡。</p>
+    <p>English: In the dispersion, running to one's support — regret disappears. Finding one's proper support and connection dissolves all cause for regret.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('浣奔其机，悔亡。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">浣其躺，无悔。</p>
+    <p>English: Dispersing one's own self — no regret. Setting aside personal concerns and ego for the good of the whole; no cause for regret.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('浣其躺，无悔。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">浣其群，元吉；浣有丘，匡夷所思。</p>
+    <p>English: Dispersing the group — great good fortune. Dispersing brings to a hilltop — not what the petty person would think. Breaking up rigid factions and elevating to a higher perspective is a great achievement.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('浣其群，元吉；浣有丘，匡夷所思。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">浣汗，其大号，浣王居，无咎。</p>
+    <p>English: Issuing great proclamations dispersed like sweat — dispersal of the king's residence. No blame. A great royal proclamation that dissolves divisions and reorganizes things from the very center.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('浣汗，其大号，浣王居，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">浣其血，去逢出，无咎。</p>
+    <p>English: Dispersing its blood — departing, keeping distance, going out. No blame. Dissolving what is harmful and keeping well away from danger.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('浣其血，去逢出，无咎。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
