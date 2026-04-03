@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 29: 坎 Kǎn – The Abysmal | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 29 – 坎 Kǎn (The Abysmal): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>29. 坎 – Kǎn (The Abysmal)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-28.html" class="back-link" style="margin-right:auto;">← 28. 大过</a>
+    <a href="hexagram-30.html" class="back-link" style="margin-left:auto;">30. 离 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☵☵ – Water above, Water below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents danger, repeated peril, and the abyss. Water flows on without ceasing, always finding its way through — this is the lesson. True inner confidence maintains flow through any obstacle. The way through danger is not to panic but to keep moving forward steadily.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Face danger with a calm heart and steady resolve.</li>
+    <li>Maintain your inner truth and sincerity as your anchor in perilous times.</li>
+    <li>Keep moving forward; water always finds its level and its path.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">习坎，入于坎竡，凶。</p>
+    <p>English: Habituated to the abyss, falling into the pit within the pit — misfortune. Becoming accustomed to danger without developing the skill to escape it only deepens the trap.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('习坎，入于坎竡，凶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">坎有险，求小得。</p>
+    <p>English: In the abyss there is danger, but one can attain small gains. Even in serious difficulty, modest progress is possible through careful and patient effort.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('坎有险，求小得。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">来之坎坎，险且枕，入于坎竡，勿用。</p>
+    <p>English: Coming and going, abyss upon abyss — dangerous and also a place to rest. Falling into the innermost pit — do not act. Surrounded by danger on all sides; stillness is the only safe option.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('来之坎坎，险且枕，入于坎竡，勿用。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">樽酒，簇贰，用缶，纳约自爨，终无咎。</p>
+    <p>English: A jug of wine, a bowl to go with it, using earthenware; receiving the bond of trust through the window — in the end no blame. Simple sincerity in a confined situation eventually breaks through.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('樽酒，簇贰，用缶，纳约自爨，终无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">坎不盈，祉既平，无咎。</p>
+    <p>English: The pit is not yet full, but the ground is already level — no blame. Progress toward resolution is happening even though the abyss is not yet conquered.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('坎不盈，祉既平，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">系用彽墨，置于丛棘，三岁不得，凶。</p>
+    <p>English: Bound with cords of twisted rope, placed in a thorn thicket — for three years one cannot escape. Misfortune. Complete entrapment, with no way out in sight.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('系用彽墨，置于丛棘，三岁不得，凶。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
