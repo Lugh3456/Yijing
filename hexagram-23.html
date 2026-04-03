@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 23: 剥 Bō – Splitting Apart | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 23 – 剥 Bō (Splitting Apart): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>23. 剔 – Bō (Splitting Apart)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-22.html" class="back-link" style="margin-right:auto;">← 22. 贲</a>
+    <a href="hexagram-24.html" class="back-link" style="margin-left:auto;">24. 复 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☶☷ – Mountain above, Earth below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents a time of disintegration, erosion, and peeling away. The mountain rests upon the earth but is being worn down from below. It is not a time for action; the wise person waits, yields, and preserves integrity for the inevitable turning point.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Do not take action when conditions are overwhelmingly unfavorable.</li>
+    <li>Retreat gracefully and preserve your resources and integrity.</li>
+    <li>The seed of renewal is always preserved even in the worst disintegration.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">剔床以足，蝌贞，凶。</p>
+    <p>English: Splitting apart the bed at the legs — the divining tortoise is destroyed. Misfortune. The very foundation is being eroded; disaster approaches from below.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('剔床以足，蝌贞，凶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">剔床以轨，蝌贞，凶。</p>
+    <p>English: Splitting apart the bed at the frame — the divining tortoise is destroyed. Misfortune. The decay has risen further; what separates us from disaster is thin.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('剔床以轨，蝌贞，凶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">剔之，无咎。</p>
+    <p>English: Splitting apart — no blame. Being in the midst of disintegration but without personal fault. One who remains true amid decline is blameless.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('剔之，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">剔床以肤，凶。</p>
+    <p>English: Splitting apart the bed to the skin — misfortune. The danger has come very close; now the person themselves is at risk.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('剔床以肤，凶。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">贯鱼，以宫人宠，无不利。</p>
+    <p>English: A string of fish — favor is bestowed through the palace people. Nothing is unfavorable. Being connected to the right people provides protection even in the worst times.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('贯鱼，以宫人宠，无不利。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">硕果不食，君子得舆，小人剔庐。</p>
+    <p>English: The large fruit is not eaten; the noble person gets a carriage, the petty person's dwelling is split apart. The seed of renewal survives for the noble person; the petty person loses everything.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('硕果不食，君子得舆，小人剔庐。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
