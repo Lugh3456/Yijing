@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 24: 复 Fù – Return | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 24 – 复 Fù (Return): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>24. 复 – Fù (Return)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-23.html" class="back-link" style="margin-right:auto;">← 23. 剥</a>
+    <a href="hexagram-25.html" class="back-link" style="margin-left:auto;">25. 无妄 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☷☳ – Earth above, Thunder below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents the turning point, the return of the light after darkness. One yang line appears at the bottom after full retreat. This is the moment of natural renewal — not yet strong but unmistakably begun. The solstice, the new moon, the first sign of spring.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>A new cycle is beginning; support and nurture the fresh energy.</li>
+    <li>Return to your true nature and original purpose.</li>
+    <li>Rest during the turning point before resuming your journey.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">不远复，无祉悔，元吉。</p>
+    <p>English: Returning before going too far — no need for repentance. Great good fortune. A quick course correction, before straying far from the right path, is the finest outcome.</p>
+    <p class="luck luck-excellent">Luck Level: Excellent</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('不远复，无祉悔，元吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">休复，吉。</p>
+    <p>English: Returning through rest and inner calm — good fortune. Returning to one's center in the company of those of good character.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('休复，吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">频复，厉，无咎。</p>
+    <p>English: Repeated returning — dangerous but no blame. One who keeps losing the path yet keeps returning to it is not blamed, though the pattern needs attention.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('频复，厉，无咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">中行独复。</p>
+    <p>English: Walking the middle way, returning alone. The person who keeps to the mean, even when others stray, returns in solitude but in correctness.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('中行独复。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">敦复，无悔。</p>
+    <p>English: Generous and sincere return — no regret. Coming back to what is right with full heart and genuine intention.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('敦复，无悔。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">迷复，凶，有灾眨；用行师，终有大败，以其国君，凶，至于十年不克征。</p>
+    <p>English: Confused and losing the way of return — misfortune, disaster and ruin. If armies are sent out, a great defeat follows; the ruler of that state meets misfortune and is unable to recover for ten years. Completely losing one's way leads to catastrophe.</p>
+    <p class="luck luck-misfortune">Luck Level: Misfortune</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('迷复，凶，有灾眨；用行师，终有大败，以其国君，凶，至于十年不克征。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
