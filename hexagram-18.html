@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ching Hexagram 18: 蛊 Gǔ – Work on Decay | Yijing Insights</title>
+<meta name="description" content="I Ching Hexagram 18 – 蛊 Gǔ (Work on Decay): explore its meaning, trigrams, interpretation, and all six yao lines with classical Chinese text, English translations, and luck levels.">
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<header>
+  <h1>18. 蕈 – Gǔ (Work on What Is Spoiled)</h1>
+  <a href="index.html" class="back-link">← Back to Home</a>
+  <nav class="hex-nav" style="display:flex;width:100%;max-width:700px;justify-content:space-between;margin-top:0.5rem;" aria-label="Hexagram navigation">
+    <a href="hexagram-17.html" class="back-link" style="margin-right:auto;">← 17. 随</a>
+    <a href="hexagram-19.html" class="back-link" style="margin-left:auto;">19. 临 →</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<section class="hexagram-detail">
+  <h2>Trigrams</h2>
+  <p>☶☴ – Mountain above, Wind below</p>
+
+  <h2>Meaning</h2>
+  <p>Represents decay, corruption, and the work of restoration. What has been neglected or spoiled must be addressed with decisive action. This is a time to identify what has gone wrong in one's affairs, family, or situation and to apply determined effort to set it right.</p>
+
+  <h2>Interpretation</h2>
+  <ul>
+    <li>Identify the root cause of problems and address them directly.</li>
+    <li>Correcting inherited problems requires courage and sustained effort.</li>
+    <li>After successfully completing the repair, plan ahead to prevent recurrence.</li>
+  </ul>
+
+  <h2>Six Yao (Lines) with Classical Quotes</h2>
+  <div class="yao">
+    <h3>1st Yao (初爻)</h3>
+    <p class="chinese" lang="zh">干父之蕈，有子，考无咎，厉终吉。</p>
+    <p>English: Working to correct the father's mistakes. If there is a worthy son, the father is blameless. Danger but ultimately good fortune. A capable successor can redeem past failures.</p>
+    <p class="luck luck-good">Luck Level: Good</p>
+    <button class="listen-btn" aria-label="Listen to 1st Yao (初爻)" onclick="speak('干父之蕈，有子，考无咎，厉终吉。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>2nd Yao (二爻)</h3>
+    <p class="chinese" lang="zh">干母之蕈，不可贞。</p>
+    <p>English: Working to correct the mother's mistakes. Do not persist too rigidly. Gentleness and tact are needed when addressing the faults of those close to you.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 2nd Yao (二爻)" onclick="speak('干母之蕈，不可贞。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>3rd Yao (三爻)</h3>
+    <p class="chinese" lang="zh">干父之蕈，小有悔，无大咎。</p>
+    <p>English: Working to correct the father's mistakes — some regret, but no great blame. Even if the correction is somewhat excessive, the intent is right.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 3rd Yao (三爻)" onclick="speak('干父之蕈，小有悔，无大咎。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>4th Yao (四爻)</h3>
+    <p class="chinese" lang="zh">裕父之蕈，往见吝。</p>
+    <p>English: Tolerating the father's mistakes brings regret if continued. Excessive leniency toward inherited problems only perpetuates the decline.</p>
+    <p class="luck luck-caution">Luck Level: Caution</p>
+    <button class="listen-btn" aria-label="Listen to 4th Yao (四爻)" onclick="speak('裕父之蕈，往见吝。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>5th Yao (五爻)</h3>
+    <p class="chinese" lang="zh">干父之蕈，用證。</p>
+    <p>English: Working to correct the father's mistakes, one earns praise. When the correction is accomplished well, it brings genuine recognition and honor.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 5th Yao (五爻)" onclick="speak('干父之蕈，用證。')">Listen</button>
+  </div>
+  <div class="yao">
+    <h3>6th Yao (上爻)</h3>
+    <p class="chinese" lang="zh">不事王侯，高尚其事。</p>
+    <p>English: Not serving kings or princes, one's affairs are elevated. The person who withdraws from the corrupted world to cultivate personal virtue holds to a higher calling.</p>
+    <p class="luck luck-neutral">Luck Level: Neutral</p>
+    <button class="listen-btn" aria-label="Listen to 6th Yao (上爻)" onclick="speak('不事王侯，高尚其事。')">Listen</button>
+  </div>
+</section>
+</main>
+
+<script>
+function speak(text) {
+    const synth = window.speechSynthesis;
+    function loadAndSpeak() {
+        const voices = synth.getVoices();
+        const tingTing = voices.find(v => v.name.includes("Ting") && v.lang === "zh-CN");
+        const msg = new SpeechSynthesisUtterance(text);
+        msg.lang = "zh-CN";
+        if (tingTing) msg.voice = tingTing;
+        msg.rate = 0.9;
+        msg.pitch = 1;
+        synth.speak(msg);
+    }
+    if (speechSynthesis.getVoices().length === 0) {
+        speechSynthesis.onvoiceschanged = loadAndSpeak;
+    } else {
+        loadAndSpeak();
+    }
+}
+</script>
+
+</body>
+</html>
